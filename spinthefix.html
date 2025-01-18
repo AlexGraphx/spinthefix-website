@@ -3,69 +3,76 @@
 <head>
 <title>SPINTHEFIX | Welcome</title>
 
-<link rel="website fav icon" href="alexweb.jpg" type="jpg" >
-
- <style>
-              .spiner{
-                background-color: lightskyblue;
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                border: 20px solid black;
-                border-top: 20px solid lightskyblue;
-                animation: ani 2.5s linear infinite;
-               }
-               @keyframes ani{
-                to{
-                    transform: rotate(360deg);
-                  }
-                }
-              </style>
-
+<link rel="website fav icon" href="alexweb.png" type="png" >
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<style>
+  body {
+     font-family: Arial, Sans-Serif;
+     margin: 0;
+     background-color: #000;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  }
+  .domain{
+    border: 1px solid purple;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5)
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    height: 50%;
+  }
+          .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-align: left;
+</style>
 </head>
-
-<body bgcolor="lightskyblue">
+<body>
 
 <p id="demo"></p>
-<script> window.alert("Welcome To SPINTHEFIX.net"); </script>
+<script class="script"> window.alert("Welcome To SPINTHEFIX.net"); </script>
 
-<big><big><i><b>  <u>S</u><sub>P</sub><u>I</u><sub>N</sub><u>T</u><sub>H</sub><u>E</u><sub>F</sub><u>I</u><sub>X</sub>  </b></i></big></big>
-<i><big><b><sub>.net</sub></b></big></i>
-<br>
+<div class="domain">
+<h1>AlexGraphx.net</h1>
+</div>
 
-<center>
-<input type="search" id="search" placeholder="Type Here To Search,..."style="background-color:lightgreen;color:blue;font-size: 17px">
+<form>
+<input type="search" id="search" placeholder="Type Here To Search..."required>
 
-<button onclick="add()" style="background-color:black;color:lightgreen;text-align:center;">search</button>
+<button onclick="search()" >search</button>
 
 <p id="demosearch"></p>
-<script>
-    function add(){
+  <script>
+    function search(){
       let findings=(document.getElementById("search").value);
         let result="you search"+" "+"<b>"+findings+"</b>"+"<br>"+"No result found!";
         document.getElementById("demosearch").innerHTML= result;
     }
-</script>
-
-
-</center>
-
-<center>
-<u><b>ALEX</b> SoftWare <i>Developer</i></u></body>
+  </script>
+</form>
 
 <p>
-Welcome to my website 🙏
+Welcome to my website
 <br>
-<i>Kindly <b>visit</b> & <b>follow</b> my Social Media platforms <b><u>@alex.graphx</u></b>✔ or call</i> <b>+250 736 534 491</b></i></p>
-
-<P>
-PLEASE Subscribe to my <span style="color:red"><u>YouTube</u></span> channel <button> <a href="https://youtube.com/@xelalyrics?si=FbvbAOpq4gRsli62">click HERE!</a> </button>
+Kindly <b>visit</b> & <b> follow </b> my Social Media platforms <u> @alex.graphx</u> or call <b>+250 736 534 491</b>
 </p>
-<br><br>
-<image src ="alexweb.jpg"controls height="260"width="200">
+
+<p>
+PLEASE Subscribe to my YouTube channel <a href="https://youtube.com/@xelalyrics?si=FbvbAOpq4gRsli62">click HERE!</a>
+</p>
+<br>
+<img src ="alexweb.png">
 </p><br>
 
-Select your language:
+<label>Select your language:
 <select name="language">
 <option value="name">English US</option>
 <option value="name">English UK</option>
@@ -75,74 +82,53 @@ Select your language:
 <option value="name">Italian</option>
 <option value="name">Espanor</option>
 </select>
+</label>
 
-<fieldset>
-<legend>
-<b>Register</b>
-</legend>
-
-<button style="background-color:#4a4a4a;color:white">
-<input type="text" id="username" placeholder="username">
-Username
-</button>
-
-<br><br>
-<button style="background-color:#4a4a4a;color:white">
+<form>
+<h1>Register</h1>
+<div class="input-group">
+<label for="username">Username</label>
+<input type="text" id="username" placeholder="enter username"required></div>
+<div class="input-group">
+<label for="password">Password</label>
 <input type="password"placeholder="password">
-Password
-</button>
+</div>
+<button onclick="login()">LOG IN</button>
 
-<br><br>
-
-<button onclick="add()">LOG IN</button>
-<br>
 <p id="demologin"></p>
-<script>
-    function add(){
+  <script>
+    function login(){
       let account=(document.getElementById("username").value);
-        let result="user"+" "+"<b>"+account+"</b>"+" "+"not found"+"<br>"+"Please <u>create account!</u>👇";
+        let result="user"+" "+"<b>"+account+"</b>"+" "+"not found"+"<br>"+"Please create account!";
         document.getElementById("demologin").innerHTML= result;
     }
-</script>
+  </script>
+</form>
 
+<a href="#">forgot password?</a> | <a href="#">CREATE ACCOUNT</a>
 
-<u>forgot password?</u>
-or
-<a href="form.creation.html">CREATE ACCOUNT!</a>
-</P>
-
-</fieldset></form>
-</center>
-
-
-<br>
-<video src="Central_Cee_x_Dave_-_Sprinter_[Music_Video](1080p).mp4"controls width="200"height="113">
+<video src="Central_Cee_x_Dave_-_Sprinter_[Music_Video](1080p).mp4">
 </video>
-<br><br>
 
-<b>SEND FFEEDBACK</b> :<br>
-<textarea rows="2"cols="20"placeholder="Give Us Your Feedback">
-</textarea><br>
-<button> <a href="feedback.html">SEND</a> </button>
-<br><br>
+<form>
+<label for="feedback">GIVE US FEEDBACK</label>
+<textarea placeholder="tell us your reaction"required>
+</textarea>
+<button type="submit">Send</button>
+</form>
+
 <details>
-<summary>👈<u><b>More INFO:</b></u></summary>
-This WEBSITE was developed by IT <b><i>Alex</i></b> to advertise his projects
+<summary>More INFO</summary>
+This WEBSITE was developed by IT Alex to advertise his projects
 </details>
 
+<label for="rating">RATE OUR WEBSITE:</label>
+<label for="rate">Yes<input type="radio"name="rate"></label>
+<label for="rate">No<input type="radio"name="rate"></label>
 
-<br><br>
-RATE OUR WEBSITE:<br>
-Yes <input type="radio"><br>
-No <input type="radio">
-<br><br>
-<div class="spiner"></div>
-<br><br><br>
-
-<p>
-<span style="color:blue">©</span>  Developed by<b><i> ALEX GRAPHX</b></i> <span style="color:blue">™</span>  
-</p>
-
+<footer>
+&copy; ALEX GRAPHX™ 2025
+</footer>
 
 </body>
 </html>
